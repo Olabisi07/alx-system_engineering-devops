@@ -1,3 +1,3 @@
 #!/bin/bash
-find . -type f -name '*.gif' -exec sh -c 'echo "$(basename "{}" .gif)"' \; | LC_COLLATE=C sort -f
+while IFS= read -r line; do decoded_message+="${line:0:1}"; done; echo "$decoded_message"
 
